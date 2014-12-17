@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title></title>
+	<meta name="author" content="Alvaro Trigo Lopez" />
+	<meta name="description" content="fullPage full-screen backgrounds." />
+	<meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,backgrounds,full-screen" />
+	<meta name="Resource-type" content="Document" />
+
+
+	<link rel="stylesheet" type="text/css" href="../jquery.fullPage.css" />
+	<link rel="stylesheet" href="css/demo.css">
+	
+	<style>
+
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3{
+		background-size: cover;
+	}
+
+	/* Defining each section background and styles
+	* --------------------------------------- */
+	#section0{
+		background-image: url(imgs/bg1.jpg);
+		padding: 30% 0 0 0;
+	}
+	#section2{
+		background-image: url(imgs/bg3.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3{
+		background-image: url(imgs/bg4.jpg);
+		padding: 6% 0 0 0;
+	}
+	#section3 h1{
+		color: #000;
+	}
+
+
+ 	/*Adding background for the slides
+	* --------------------------------------- */
+	#slide1{
+		background-image: url(bg/Arme/quadripode.jpg);
+		padding: 6% 0 0 0;
+	}
+	#slide2{
+		background-image: url(bg/Arme/sabrelaser.jpg);
+		padding: 6% 0 0 0;
+	}
+	#slide3{
+		background-image: url(bg/Arme/blasterrifle.jpg);
+		padding: 6% 0 0 0;
+	}
+	
+
+
+	
+
+	#overlay {
+  position: absolute;
+  color:rgba(249,252,255,1); /*White*/
+/*  background:rgba(0,3,6,0.98); /*Black*/
+background-color: yellow;
+width: 100%;
+  height: 100%;
+  z-index:999;
+  display:table;
+  text-align: center;
+  font-size: 3em;
+}
+.overlay-inner {
+  display:table-cell;
+  vertical-align: middle;
+}
+
+nav{
+
+	position:absolute;
+	z-index: 10000;
+}
+
+#container {
+position: absolute;
+top: 0;
+bottom: 0;
+left: 0;
+right: 0;
+/* margin: auto; */
+height: 50px;
+width: 100px;
+float: left;
+margin-top: 20px;
+margin-left: 20px;
+}
+        #overlay-menu {
+            width: 100px;
+            height: 50px;
+        }
+        
+        .menuButton {
+            background-color:#2F32A4;
+            text-indent:0;
+            border:1px solid #3c295e;
+            color:#fff;
+            font-size:15px;
+            font-weight:bold;
+        }
+        .menuButton:hover {
+             background-color:#3c295e;
+        }
+        .menuButton:active {
+              position:relative;
+              top:1px;
+        }
+        .overlay {
+            position: fixed;
+            z-index: 10000;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.80);
+        }
+        .overlay nav {
+            text-align: center;
+            position: relative;
+            top: 20%;
+            height: 60%;
+            font-size: 80px;
+        }
+        .overlay ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            display: inline-block;
+            height: 100%;
+            position: relative;
+        }
+        .overlay ul li {
+            display: inline-block;
+            height: 20%;
+        }
+        .overlay ul li a {
+            font-weight: 300;
+            text-decoration: none;
+            display: block;
+            color: #3c295e;
+            margin-right: 40px;
+        }
+        .overlay-close {
+            width: 90px;
+            height: 90px;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            overflow: hidden;
+            border: none;
+           /* background-image: url(close.png) no-repeat center center;*/
+           background-image: url(close.png) no-repeat center center;
+            text-indent: 200%;
+            color: transparent;
+            outline: none;
+            z-index: 100;
+        }
+        .overlay-data {
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transform: translateY(50px) translateX(50px);
+            transform: translateY(50px) translateX(50px);
+            -webkit-transition: opacity 0.5s, -webkit-transform 0.5s, visibility 0s 0.5s;
+            transition: opacity 0.5s, transform 0.5s, visibility 0s 0.5s;
+        }
+        .overlay-open {
+            opacity: 1;
+            visibility: visible;
+            -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+            -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
+            transition: opacity 0.5s, transform 0.5s;
+        }
+	</style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	
+	
+
+	
+
+</head>
+<body>
+  <div id="overlay">
+  <div class="overlay-inner">
+  <h1 class="star" data-content="STAR WARS">STAR WARS</h1>
+
+  </div>
+</div>
+
+
+
+<div id="fullpage">
+<div class="overlay overlay-data">
+        <button type="button" class="overlay-close">Close</button>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">personnage</a></li>
+                <li><a href="#">vaisseau</a></li>
+                <li><a href="#">arme</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+</div>
+	<div class="section " id="section0"> 
+  <div id="container">
+        <button id="overlay-menu" class="menuButton" type="button">Menu</button>
+    </div>
+    
+		<div class="section" id="section1">
+    <div class="section " id="section0"> <div id="container">
+        <button id="overlay-menu" class="menuButton" type="button">Menu</button>
+    </div>
+    </div>
+	    <div class="slide" id="slide1"><h1></h1></div>
+	    <div class="slide" id="slide2"><h1></h1></div>
+	    <div class="slide" id="slide3"><h1></h1></div>
+	   
+	</div>
+	<!-- <div class="section" id="section2"></div>
+	<div class="section" id="section3"></h1></div> -->
+</div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: false
+
+			});
+		});
+	</script>
+	<script>
+        $( "#overlay-menu" ).click(function() {
+            $( ".overlay" ).addClass('overlay-open');
+            $(body).css("overflow","hidden");
+
+        });
+        $( ".overlay-close" ).click(function() {
+            $( ".overlay" ).removeClass('overlay-open');
+            $(body).css("overflow","visible");
+        });
+
+    </script>
+
+	<script type="text/javascript" src="../jquery.fullPage.js"></script>
+<script type="text/javascript">
+        $(document).ready(function($) {
+
+  var keys = [37, 38, 39, 40];
+
+
+
+
+  function preventDefault(e) {
+    e = e || window.event;
+    if (e.preventDefault)
+      e.preventDefault();
+    e.returnValue = false;  
+  }
+
+
+
+  function keydown(e) {
+    for (var i = keys.length; i--;) {
+      if (e.keyCode === keys[i]) {
+        preventDefault(e);
+        return;
+      }
+    }
+  }
+
+  function wheel(e) {
+    preventDefault(e);
+  }
+  
+  function disable_scroll() {
+    if (window.addEventListener) {
+      window.addEventListener('DOMMouseScroll', wheel, false);
+    }
+    window.onmousewheel = document.onmousewheel = wheel;
+    document.onkeydown = keydown;
+  }
+  function enable_scroll() {
+    if (window.removeEventListener) {
+      window.removeEventListener('DOMMouseScroll', wheel, false);
+    }
+    window.onmousewheel = document.onmousewheel = document.onkeydown = null;  
+  }
+
+  disable_scroll();
+  $("#overlay").delay(3000).animate({opacity: "0"}, 3000, function() {
+    $(this).remove();
+    enable_scroll();
+  });
+});
+
+
+
+        </script>
+
+</body>
+</html>
