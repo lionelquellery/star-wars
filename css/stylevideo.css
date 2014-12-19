@@ -1,0 +1,83 @@
+html {
+     overflow: hidden;
+     overflow-x:none;
+ }
+ body {
+     margin: 0;
+     padding: 0;
+     background: black;
+ }
+ #video-background {
+     position: cover fixed;
+     right: 0;
+     bottom: 0;
+     min-width: 100%;
+     min-height: 100%;
+     width: 100%;
+     height: 100%;
+     z-index: -1000;
+     overflow: hidden;
+ }
+ article {
+     position: absolute;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     border: 10px solid rgba(255, 255, 255, 0.5);
+     margin: 0px;
+ }
+ h1 {
+     position: absolute;
+     top: 15%;
+     width: 100%;
+     font-size: 96px;
+     letter-spacing: 18px;
+     color: #f1c40f;
+     font-family: Oswald, sans-serif;
+     text-align: center;
+ }
+ #overlay {
+     position: absolute;
+     /*color:rgba(249,252,255,1); /*White*/
+     /*background:rgba(0,3,6,0.98); /*Black*/
+     background-color: black;
+     width: 100%;
+     height: 100%;
+     z-index:999;
+     display:table;
+     text-align: center;
+ }
+ #overlay.img {
+     position:absolute;
+     top:50%;
+     left:50%;
+     margin-left:-500px;
+     margin-top:-234px;
+     z-index:1000;
+     text-align: center;
+ }
+ .overlay-inner {
+     display:table-cell;
+     vertical-align: middle;
+ }
+ .star > h1 {
+     position: absolute;
+     left: 50%;
+     margin-left: -1.9em;
+     color: hsla(0, 0%, 100%, .3);
+     font: 900 800% Baskerville, 'Palatino Linotype', Palatino, serif;
+ }
+ @-webkit-keyframes loading {
+     from {
+         max-width: 0;
+     }
+ }
+ .star > h1:before {
+     content: attr(data-content);
+     position: absolute;
+     overflow: hidden;
+     max-width: 4em;
+     color: white;
+     animation: loading 10s linear;
+ }

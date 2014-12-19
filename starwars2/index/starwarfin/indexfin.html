@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Star wars</title>
+    !<meta charset="UTF-8">
+		<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1' />
+        
+        
+ 
+       
+
+       
+<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/styles1.css">
+
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.js"></script>
+ <script src="jquery.countdown.js"></script>
+
+
+
+    </head>
+    <body>
+  <div class="space"></div>
+  <div class="star"><img src="images/SW.png"></div>
+  <div class="prepare"> - preparez-vous Jedi - <br>
+  <br></div>
+  <div class="social">Le Prochain combat va bientôt commencer</div>
+  <div class="baton"></div>
+
+
+  <div id="getting-started"></div>
+
+
+<div class="batonbis"></div>
+<div class="social">Partager cette expérience</div>
+<div id="wrapper">
+  <ul id="menu">
+    <li><a href="http://twitter.com/share" class="twitter-share-button" 
+  data-count="vertical" data-via="starwars">Tweet</a>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+    <li><iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;layout=button" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowTransparency="true"></iframe></li>
+    <li><a class="texte" href="../GaleriePhotos/index.html">Gallery</a></li>
+    <li><a class="texte" href="../contact/index.html">équipe</a></li>
+   
+  </ul>
+</div>
+
+  <script type="text/javascript">
+
+    $("#getting-started")
+    .countdown("2015/12/18", function(event) {
+      $(this).text(
+        event.strftime('%D jours %H:%M:%S')
+      );
+    });
+ </script>
+
+
+
+    </body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Star Wars</title>
+        <meta name="author" content="" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="css/styles1.css">
+        <link rel="stylesheet" type="text/css" href="vendors/jquery.fullPage.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" href="css/sabre.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="vendors/jquery.fullPage.js"></script>
+        <script src="js/overlayloader.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+                    anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                    menu: '#menu',
+                    afterLoad: function(anchorLink, index) {
+
+                        //section 2
+                        // if(index == 2){
+                        // 	//moving the image
+                        // 	$('#section1').find('img').delay(500).animate({
+                        // 		left: '0%'
+                        // 	}, 1500, 'easeOutExpo');
+
+                        // 	$('#section1').find('p').first().fadeIn(1800, function(){
+                        // 		$('#section1').find('p').last().fadeIn(1800);
+                        // 	});;
+
+                        // }
+
+                        //section 3
+                        if (anchorLink == '3rdPage') {
+                            
+                            $('#section2').find('.intro').delay(500).animate({
+                                left: '0%'
+                            }, 1500, 'easeOutExpo');
+                        }
+                    }
+                });
+
+            });
+        </script>
+    </head>
+    
+    <body>
+
+      <div id="overlay">
+            <div class="overlay-inner">
+                <img class="tile" src="starwars.png">
+            </div>
+        </div>
+        <div id="fullpage">
+
+            <div class="section " id="section0">
+                <div class="section-content">
+                    <div class="content">
+                        <div class="hover"></div>
+                        <img data-sr='wait 4.5s and then ease-in-out 100px' class="logo" src="fond/logogauche.png" alt="">
+                         <h1 class="empire1" data-sr=' wait 5s and then enter right with move -650px over 7s  '>Empire</h1>
+
+                        <hr / class="line">
+                        <p class="combination1" data-sr=' wait 6s and then enter right with move -650px over 7s  '>NOUS VOUONS UN CULTE
+                            <br>A LA FORCE ET AU...</p>
+                         <h1 class="power">POUVOIR</h1>
+
+                    </div>
+                    <div class="content2">
+                        <img data-sr='wait 4.5s and then ease-in-out 100px' class="logo2" src="img/noir.png" alt="">
+                         <h1 class="empire2" data-sr=' wait 5s and then enter right with move 650px over 7s '>Republique</h1>
+
+                        <hr />
+                        <p class="combination2" data-sr=' wait 6s and then enter right with move 650px over 7s  '>REJOIGNEZ LA REBELLION ET
+                            <br>BATTEZ-VOUS POUR...</p>
+                         <h1 class="liberte">LIBERTE</h1>
+
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section1">
+                <div class="section-content">
+                    <div class="content3">
+                    <p class="combination4">Les véritables origines des Sith restent entourées de mystère. La race Sith était insignifiante jusqu’à l’arrivée sur Korriban il y a trois mille ans de Jedi Noirs exilés qui soumirent les Sith à leur domination et leur philosophie.</p>
+                        <img src="img/Hologramme.png" class="Hologramme" alt="">
+                    </div>
+                    <div class="content4">
+                    <p class="combination5">Pendant plus de vingt mille ans, la République Galactique fut la puissance la plus civilisée et avancée de la galaxie connue. Gouvernée par le Sénat Galactique constitué des représentants de centaines de systèmes stellaires et de planètes, la République était le centre de la paix et du progrès, un modèle dans l’obscurité de l'espace.</p>
+                        <img src="img/HologrammeV2.png" class="Hologramme" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section3">
+                <div class="section-content">
+                    <div class="content3">
+                        <p class="text">Je suis avec l'empire
+                            <br>(cliquez sur le sabre)</p>
+                        <div class="container">
+                            <div class="container">
+                                <input id="vader" class="chk" type="checkbox" />
+                                <label for="vader" class="vader-saber">
+                                    <div class="light"></div>
+                                    <div class="bando">
+                                        <img src="img/Sabre1.png">
+                                    </div>
+                                </label>
+                                <button onclick="location.href='pobscur/pobscur.html'">Go Soldat</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content4">
+                        <p class="text1">Je suis avec la république
+                            <br>(cliquez sur le sabre)</p>
+                        <div class="containerr">
+                            <div class="containerr">
+                                <input id="vaderr" class="chkr" type="checkbox" />
+                                <label for="vaderr" class="vader-saberr">
+                                    <div class="lightr"></div>
+                                    <div>
+                                        <img class="saber2" src="img/Sabre2.png">
+                                    </div>
+                                </label>
+                                <button  onclick="location.href='pclair/pclair.html'" >Go Soldat</button>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+
+</html>

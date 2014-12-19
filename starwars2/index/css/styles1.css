@@ -1,0 +1,339 @@
+#section1 img {
+     /*left: 130%;*/
+     position:relative;
+ }
+ #section1 p {
+     
+ }
+ #section2 .intro {
+     left: -130%;
+     position:relative;
+ }
+ div.content {
+     background-image:url('../fond/Back.jpg');
+     background-position: center center cover;
+     height: 100%;
+ }
+ div.content2 {
+     background-image:url('../fond/FinalGauche.jpg');
+     background-position: center center cover;
+     background-repeat: no-repeat;
+     height: 100%;
+ }
+ div.content3 {
+     background-image:url('../fond/Backd1.jpg');
+     background-position: center center cover;
+     height: 100%;
+ }
+ div.content4 {
+     background-image:url('../fond/Backd2.jpg');
+     background-position: center center cover;
+     background-repeat: no-repeat;
+     height: 100%;
+ }
+ .content {
+     float: left;
+     padding: 10px 2% 10px 2%;
+     margin: 0px;
+     border: 0px;
+     background: #F0F2F4;
+     width: 50%;
+     
+ voice-family:inherit;
+     width: 46%;
+ }
+ html>body .content {
+     width: 46%;
+    
+ }
+ .content2 {
+     float: right;
+     
+     padding: 10px 2% 10px 2%;
+     margin: 0px;
+     border: 0px;
+     background: #666;
+     width: 50%;
+   
+ voice-family:inherit;
+     width: 46%;
+ }
+ html>body .content2 {
+     width: 46%;
+     /
+ }
+ .content3 {
+     float: left;
+     padding: 0px 2%;
+     margin: 0px;
+     border: 0px;
+     background: #F0F2F4;
+     width: 50%;
+     voice-family:"\"}\"";
+ voice-family:inherit;
+     width: 46%;
+ }
+ html>body .content3 {
+     width: 46%;
+ }
+ .content4 {
+     float: right;
+     padding: 0px 2%;
+     margin: 0px;
+     border: 0px;
+     background: #666;
+     width: 50%;
+     voice-family:"\"}\"";
+ voice-family:inherit;
+     width: 46%;
+ }
+ html>body .content4 {
+     width: 46%;
+ }
+ html, button, input, select, textarea {
+     color: #222;
+ }
+ body {
+     font-size: 1em;
+     line-height: 1.4;
+ }
+ hr {
+     display: block;
+     height: 0px;
+     width: 88px;
+     border: 0;
+     border-top: 11px solid black;
+     /* margin: -1em 0; */
+     padding: 0;
+     padding-bottom: 10px;
+ }
+ fieldset {
+     border: 0;
+     margin: 0;
+     padding: 0;
+ }
+ textarea {
+     resize: vertical;
+ }
+ .chromeframe {
+     margin: 0.2em 0;
+     background: #ccc;
+     color: #000;
+     padding: 0.2em 0;
+ }
+ .section-content {
+     display: block;
+     position: absolute;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     border-bottom: 1px #707070 solid;
+ }
+ .empire {
+     padding-bottom: 70px;
+     text-align: center;
+     font-size:70px;
+ }
+ p.combination {
+     color: white !important;
+ }
+ h1.empire {
+     color:white !important;
+     font-family:jedi;
+ }
+ .combination {
+     text-align: center;
+     font-family:myriadpro;
+ }
+ .logo {
+     width: 172px;
+     /* height: 200px; */
+     /* margin-left: 35%; */
+     padding-top: 26px;
+     float: initial;
+     padding-bottom: 14px;
+ }
+ h1.empire2 {
+     color:black !important;
+     font-family:jedi;
+ }
+ .empire2 {
+     text-align: center;
+     font-size: 47px;
+ }
+ h1.empire1 {
+     color:white;
+     !important;
+     font-family:jedi;
+ }
+ .empire1 {
+     text-align: center;
+     font-size: 47px;
+ }
+ .power {
+     font-family:myriadpro;
+     font-size: 30px;
+     padding-top: 13px;
+     color: rgb(234, 234, 234);
+ }
+ .combination2 {
+     text-align: center;
+     color: black !important;
+     font-family:myriadpro;
+ }
+ p.combination2 {
+     color: black !important;
+     font-size: 20px;
+     line-height: 23px;
+ }
+ .combination1 {
+     text-align: center;
+     color: rgb(234, 234, 234) !important;
+     font-family:myriadpro;
+ }
+ p.combination1 {
+     color: rgb(234, 234, 234) !important;
+     font-size: 20px;
+     line-height: 23px;
+ }
+ .logo2 {
+     width: 200px;
+     /*height: 200px;
+	margin-left: 35%;*/
+     padding-top: 43px;
+     float: initial;
+ }
+ .liberte {
+     font-family: myriadpro;
+     font-size: 30px;
+     padding-top: 13px;
+ }
+ h1.liberte {
+     color:black;
+ }
+
+ hr.line {
+ }
+ hr.line {
+     border-top: 11px solid rgb(234, 234, 234);
+ }
+ @font-face {
+     font-family:jedi;
+     src: url(../font/Starjedi.ttf);
+     font-weight: bold;
+ }
+ @font-face {
+     font-family:myriadpro;
+     src: url(../font/MyriadPro-Regular.otf);
+     font-weight: bold;
+ }
+ .Hologramme {
+     width: 80%;
+     height:80%;
+     top:21%;
+     position:static;
+ }
+ .text {
+     color:white;
+     font-size: 10px;
+ }
+ p.text {
+     margin-top: 112px;
+     margin-bottom: 172px;
+     font-size: 40px;
+     font-family: myriadpro;
+ }
+ .text1 {
+     margin-top: 112px;
+     margin-bottom: 172px;
+     font-size: 40px;
+     color:black;
+     font-family: myriadpro;
+ }
+
+
+ button{
+      display: none;
+        background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+
+
+}
+
+
+
+button:hover{
+ background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+
+
+
+#overlay {
+     position: absolute;
+     /*color:rgba(249,252,255,1); /*White*/
+     /*background:rgba(0,3,6,0.98); /*Black*/
+     background-color: black;
+     width: 100%;
+     height: 100%;
+     z-index:999;
+     display:table;
+     text-align: center;
+ }
+ #overlay.img {
+     position:absolute;
+     top:50%;
+     left:50%;
+     margin-left:-500px;
+     margin-top:-234px;
+     z-index:1000;
+     text-align: center;
+ }
+ .overlay-inner {
+     display:table-cell;
+     vertical-align: middle;
+ }
+
+
+ .tile{
+    width: 870px;
+    height: 400px;
+ }
+ .combination4{
+     text-align: center;
+     color: rgb(234, 234, 234) !important;
+     font-family:myriadpro;
+     font-size: 25px;
+     padding-top: 91px;
+
+ }
+
+ .combination5{
+    text-align: center;
+     color: black !important;
+     font-family:myriadpro;
+     font-size: 25px;
+     padding-top: 91px;
+
+
+ }

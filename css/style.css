@@ -1,0 +1,230 @@
+
+
+html{
+   overflow: none;
+   overflow-x:hidden;
+   overflow-y:hidden;  
+  
+}
+body {
+    background-color: #000;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/LittleSnowHills.jpg);
+    background-position: 50% 50%;
+    background-attachment: fixed;
+	font-family: sans-serif;
+	font-size: 14px;
+
+}
+
+h1 {
+
+}
+
+p {
+	line-height: 1.4em;
+}
+
+body #content {
+    width: 800px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+body ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+body ul li {
+    display: block;
+    list-style-type: none;
+    float: left;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    text-align: center;
+}
+canvas{
+  position: absolute;
+  min-width: 400px;
+  min-height: 400px;
+  width: 100%;
+  height: 100%;
+}
+
+.boxe {
+  width: 100%;
+  height: 280px;
+
+
+ 
+}
+
+
+img{
+  width: 200px;
+  height: 200px;
+   margin:40px;
+   z-index: 10000;
+   text-align: center;
+
+}
+
+div.boxe2{
+  margin-left: 30%;
+
+}
+
+#pol
+{
+  font-family: 'Lato', Helvetica;
+  font-weight: 100;
+ 
+  position: absolute;
+  width:100%;
+  text-align: center;
+  font-size: 8em;
+  color: #fff;
+  animation: fadeUpIn 19s;
+  -webkit-animation: fadeUpIn 19s; /* Safari and Chrome */
+}
+
+
+
+
+#polo
+{
+  font-family: 'Lato', Helvetica;
+  font-weight: 100;
+ 
+  position: relative;
+  width:100%;
+  text-align: center;
+  font-size: 8em;
+  color: #fff;
+  animation: fadeUpIn 19s;
+  -webkit-animation: fadeUpIn 19s; /* Safari and Chrome */
+}
+
+
+body ul li.gradient {
+    padding: 20px;
+    width: 360px;
+    height: 360px;
+
+    background: #efc5ca; /* Old browsers */
+    background: -moz-linear-gradient(top, #efc5ca 0%, #ef2f43 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#efc5ca), color-stop(100%,#ef2f43)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #efc5ca 0%,#ef2f43 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #efc5ca 0%,#ef2f43 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #efc5ca 0%,#ef2f43 100%); /* IE10+ */
+    background: linear-gradient(top, #efc5ca 0%,#ef2f43 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#ef2f43',GradientType=0 ); /* IE6-9 */
+}
+
+
+
+
+
+.button-container {
+  position: relative;
+  width: 800px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+.button {
+    position: absolute;
+    border: 3px solid #FFFFFF;
+    width: 280px;
+    left:50%;
+    top: 20px;
+    margin-left: -130px;
+    z-index: 200;
+    transition: border .3s linear;
+    -moz-transition: border .3s linear;
+    -webkit-transition: border .3s linear;
+}
+
+.banner-left-top {
+    width: 0; 
+    height: 0; 
+    border-top: 35px solid #FFFFFF;
+    border-left: 35px solid transparent;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -155px;
+    z-index: 199;
+}
+
+.banner-left-bottom {
+    width: 0; 
+    height: 0; 
+    border-bottom: 35px solid #FFFFFF;
+    border-left: 35px solid transparent;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: -155px;
+    z-index: 199;
+}
+
+.banner-right-top {
+    width: 0; 
+    height: 0; 
+    border-top: 35px solid #FFFFFF;
+    border-right: 35px solid transparent;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: 145px;
+    z-index: 199;
+}
+
+.banner-right-bottom {
+    width: 0; 
+    height: 0; 
+    border-bottom: 35px solid #FFFFFF;
+    border-right: 35px solid transparent;
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    margin-left: 145px;
+    z-index: 199;
+}
+
+.button a:link,
+.button a:visited {
+    background: #3CB396;
+    display: block;
+    width: calc(100%-2px);
+    color: white;
+    font-size: 1em;
+    font-weight: 300;
+    font-family: helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .10em;
+    padding: 5px 0;
+    border: 2px solid #FFF;
+    text-align: center;
+  text-decoration: none;
+    transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+}
+
+.button:hover {
+    border: 3px solid #000000;
+}
+
+.button a:hover,
+.button a:active {
+    border: 2px solid #FFFFFF;
+    color: #3CB396;
+    background: #FFF;
+}
